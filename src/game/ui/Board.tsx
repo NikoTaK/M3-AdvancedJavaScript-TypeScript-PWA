@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import type { Board as BoardType } from '../types';
+import type { Board as BoardType } from '../core/types';
 import { Cell } from './Cell';
 
 interface BoardProps {

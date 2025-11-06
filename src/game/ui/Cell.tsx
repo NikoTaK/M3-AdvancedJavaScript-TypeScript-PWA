@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import type { CellValue } from '../types';
+import type { CellValue } from '../core/types';
 
 interface CellProps {
   value: CellValue;

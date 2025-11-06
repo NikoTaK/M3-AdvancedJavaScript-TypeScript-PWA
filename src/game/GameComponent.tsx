@@ -1,8 +1,8 @@
 import { h } from 'preact';
 import { useState, useCallback } from 'preact/hooks';
-import { TicTacToeGame } from './Game';
-import { Board } from './components/Board';
-import type { GameState } from './types';
+import { TicTacToeGame } from './core';
+import { Board } from './ui';
+import type { GameState } from './core/types';
 
 export function GameComponent() {
   const [game] = useState(() => new TicTacToeGame());

@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { TicTacToeGame } from './Game';
+import { TicTacToeGame } from './core';
 
 /**
  * SMOKE TESTS - Verify basic functionality of each unit
