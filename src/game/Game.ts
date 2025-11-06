@@ -1,4 +1,4 @@
-import type { GameState, Player, Board } from './types';
+import type { GameState, Board } from './types';
 
 export class TicTacToeGame {
   private state: GameState;
@@ -27,7 +27,7 @@ export class TicTacToeGame {
   }
 
   public makeMove(row: number, col: number): boolean {
-    if (this.state.isGameOver || this.state.board[row][col] !== null) {
+    if (this.state.isGameOver || row < 0 || row >= this.size || col < 0 || col >= this.size || this.state.board[row][col] !== null) {
       return false;
     }
 
